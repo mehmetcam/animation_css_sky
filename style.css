@@ -1,0 +1,289 @@
+            * {
+                background-color: beige;
+                font-family: Arial, Helvetica, sans-serif;
+            }
+            
+            img {
+                background-color: transparent;
+                display: inline-block;
+                position: relative;
+                color: #333;
+                font-size: 70px;
+                left: -50px;
+                top: 40px;
+                background-color: transparent;
+                /* sum stuff */
+                animation-duration: 20s;
+                animation-name: fly;
+                animation-timing-function: linear;
+                animation-iteration-count: infinite;
+                height: 80px;
+            }
+            
+            .window {
+                border: 8px solid #320;
+                position: relative;
+                height: 400px;
+                width: 800px;
+                overflow: hidden;
+                margin: 30px auto;
+                background: #FD463E;
+                animation-name: example;
+                animation-duration: 20s;
+            }
+            
+            @keyframes example {
+                from {
+                    background-color: #FD463E;
+                }
+                to {
+                    background-color: #579CB4;
+                }
+            }
+            
+            #sun {
+                color: transparent;
+                position: absolute;
+                display: inline-block;
+                background: #FFF435;
+                width: 64px;
+                height: 64px;
+                border-radius: 32px;
+                top: -15px;
+                right: 12px;
+                animation-duration: 20s;
+                animation-name: sun;
+                animation-timing-function: linear;
+                animation-iteration-count: infinite;
+            }
+            
+            @keyframes sun {
+                /* animation nommée cmondosomessing */
+                0% {
+                    top: 300px;
+                    left: -50px;
+                }
+                100% {
+                    top: 10px;
+                    left: 750px;
+                }
+            }
+            
+            .cloud {
+                color: transparent;
+                position: relative;
+                display: inline-block;
+                background: #fff;
+                width: 32px;
+                height: 32px;
+                border-radius: 16px;
+                animation-name: cloud;
+                animation-timing-function: linear;
+                animation-iteration-count: infinite;
+                z-index: 1;
+                /* sum stuff */
+                animation-duration: 20s;
+            }
+            
+            @keyframes cloud {
+                /* animation nommée cmondosomessing */
+                0% {
+                    top: 10px;
+                    left: -50px;
+                }
+                12% {
+                    top: 1px;
+                }
+                100% {
+                    top: 10px;
+                    left: 800px;
+                }
+            }
+            
+            .cloud:before {
+                content: '<span>&nbsp;</span>';
+                color: transparent;
+                position: relative;
+                display: inline-block;
+                background: #fff;
+                width: 32px;
+                height: 32px;
+                border-radius: 16px;
+                top: 16px;
+                left: -16px;
+            }
+            
+            .cloud:after {
+                content: '<span>&nbsp;</span>';
+                color: transparent;
+                position: relative;
+                display: inline-block;
+                background: #fff;
+                width: 32px;
+                height: 32px;
+                border-radius: 16px;
+                top: -32px;
+                left: 10px;
+            }
+            
+            .bird1 {
+                display: inline-block;
+                position: relative;
+                color: #333;
+                font-size: 70px;
+                left: -50px;
+                top: 40px;
+                background-color: transparent;
+                /* sum stuff */
+                animation-duration: 10s;
+                animation-name: fly;
+                animation-timing-function: linear;
+                animation-iteration-count: infinite;
+            }
+            
+            .bird2 {
+                display: inline-block;
+                position: relative;
+                color: #333;
+                font-size: 20px;
+                left: -50px;
+                top: 40px;
+                background-color: transparent;
+                /* sum stuff */
+                animation-duration: 20s;
+                animation-name: fly;
+                animation-timing-function: linear;
+                animation-iteration-count: infinite;
+            }
+            
+            .bird3 {
+                display: inline-block;
+                position: relative;
+                color: #333;
+                font-size: 60px;
+                left: -50px;
+                top: 40px;
+                background-color: transparent;
+                /* sum stuff */
+                animation-duration: 30s;
+                animation-name: fly;
+                animation-timing-function: linear;
+                animation-iteration-count: infinite;
+            }
+            
+            .bird4 {
+                display: inline-block;
+                position: relative;
+                color: #333;
+                font-size: 40px;
+                left: -50px;
+                top: 40px;
+                background-color: transparent;
+                /* sum stuff */
+                animation-duration: 40s;
+                animation-name: fly;
+                animation-timing-function: linear;
+                animation-iteration-count: infinite;
+            }
+            
+            @keyframes fly {
+                /* animation nommée cmondosomessing */
+                0% {
+                    top: 100px;
+                    left: -50px;
+                }
+                12% {
+                    top: 200px;
+                }
+                18% {
+                    top: 50px;
+                }
+                25% {
+                    top: 200px;
+                }
+                40% {
+                    top: 50px;
+                }
+                60% {
+                    top: 200px;
+                }
+                80% {
+                    top: 50px;
+                }
+                90% {
+                    top: 200px;
+                }
+                100% {
+                    top: 10px;
+                    left: 800px;
+                }
+            }
+            
+            @keyframes cmondosomessing {
+                /* animation nommée cmondosomessing */
+                0% {
+                    top: 10px;
+                    left: -50px;
+                }
+                12% {
+                    top: 1px;
+                }
+                100% {
+                    top: 10px;
+                    left: 250px;
+                }
+            }
+            
+            .cloud {}
+            
+            @keyframes surprise {
+                0% {
+                    top: 10px;
+                    left: -50px;
+                }
+                100% {
+                    top: 10px;
+                    left: 250px;
+                }
+            }
+            
+            div {
+                @keyframes lol {
+                    0% {
+                        transform: translate(0);
+                    }
+                    5% {
+                        transform: translate(20px, 5px);
+                    }
+                    15% {
+                        transform: translate(40px, -5px);
+                    }
+                    25% {
+                        transform: translate(60px, 5px);
+                    }
+                    35% {
+                        transform: translate(80px, -5px);
+                    }
+                    45% {
+                        transform: translate(100px, 5px);
+                    }
+                    55% {
+                        transform: translate(120px, -5px);
+                    }
+                    65% {
+                        transform: translate(140px, 5px);
+                    }
+                    75% {
+                        transform: translate(160px, -5px);
+                    }
+                    85% {
+                        transform: translate(180px, 5px);
+                    }
+                    95% {
+                        transform: translate(200px, -5px);
+                    }
+                    100% {
+                        transform: translate(220px);
+                    }
+                }
+            }
